@@ -1,15 +1,17 @@
+NAME =
+
 CC = gcc
 
 CFLAGS = -Werror -Wall -Wextra
 
 SERVER = server
-SERVER_SRCS = srcs/server.c \
-			  srcs/utils_3.c
+SERVER_SRCS = srcs/main_server.c \
+			  srcs/utils3.c
 
 CLIENT = client
-CLIENT_SRCS = srcs/client.c \
+CLIENT_SRCS = srcs/main_client.c \
 			  srcs/utils.c \
-			  srcs/utils_2.c 
+			  srcs/utils2.c 
 
 all : $(SERVER) $(CLIENT)
 
