@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   utils.c                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: fmota <fmota@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/09/25 20:10:11 by fmota             #+#    #+#             */
+/*   Updated: 2021/09/25 20:10:22 by fmota            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "minitalk.h"
 
 int	negative(char *str)
@@ -25,7 +37,7 @@ int	number_checker(char *str, int nb, int count, int nb_verify)
 		if (str[count] == 32 && nb_verify == 0)
 			return (0);
 		else if ((str[count] < 48 || str[count] > 57) && str[count] != '+'
-				&& str[count] != '-' || nb_verify == 1 && (str[count] == '+'
+			&& str[count] != '-' || nb_verify == 1 && (str[count] == '+'
 				|| str[count] == '-'))
 			return (1);
 	}
@@ -41,7 +53,7 @@ int	number_checker(char *str, int nb, int count, int nb_verify)
 int	acess_num(char *str)
 {
 	int	nb_verify;
-	int index;
+	int	index;
 	int	nb;
 
 	index = 0;
